@@ -13,7 +13,7 @@ app.use(function(req,res,next){
     next();
 });
 process.env.SECRET= 'sshhhhsssh';
-mongoose.connect('mongodb://sashikodi:omsai28@ds151927.mlab.com:51927/mongo');
+mongoose.connect('mongodb://sashikodi:omsai28@ds151927.mlab.com:51927/sandbox');
 var connection = mongoose.connection;
 connection.on('error', function(){
    console.log('error occured while trying to connect to mongodb') ;
